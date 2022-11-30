@@ -1,0 +1,13 @@
+.div_parrent {
+  display: flex;
+}
+.header_left {
+  flex: 0.5;
+  background-color: red;
+  color: blue;
+}
+.header_right {
+  flex: 0.5;
+  background-color: blue;
+  color: red;
+}
