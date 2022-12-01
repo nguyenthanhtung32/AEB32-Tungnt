@@ -8,66 +8,65 @@
     <title>Document</title>
     <style>
         .container {
-            height: 100px;
-            text-align: center;
-            margin-left: 20%;
-            margin-right: 20%;
-            padding-bottom: 1%;
-        }
-
-        header {
-            border: 1px solid #333;
-            color: forestgreen;
-            height: 50%;
-
-        }
-
-        nav {
-            /* background-color: brown; */
-            border: 1px solid #333;
-            color: forestgreen;
-            margin-bottom: 3px;
-            margin-top: 3px;
-            height: 50%;
-
-        }
-
-        .content {
             height: 800px;
             text-align: center;
             margin-left: 20%;
             margin-right: 20%;
-
+            padding-bottom: 5%;
         }
 
-        .contentleft {
-            float: left;
-            width: 292px;
-            height: 300px;
+        header {
             border: 1px solid #333;
-            color: forestgreen;
-            padding-left: 3px;
+            height: 100px;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: forestgreen;
+        }
+
+        nav {
+            border: 1px solid #333;
+            height: 100px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            color: forestgreen;
+        }
+
+        .content {
+            height: 450px;
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .contentleft {
+            width: 25%;
+            height: 100%;
+            border: 1px solid #333;
+            color: forestgreen;
+            margin-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center
         }
 
         .contentright {
-            float: right;
-            width: 290px;
-            height: 300px;
+            width: 25%;
+            height: 100%;
             border: 1px solid #333;
             color: forestgreen;
-            padding-right: 5px;
+            margin-left: 5px;
             display: flex;
             justify-content: center;
             align-items: center
         }
 
         .maincontent {
-            margin-left: 300px;
-            margin-right: 300px;
-            height: 300px;
+            width: 50%;
+            height: 100%;
             border: 1px solid #333;
             color: forestgreen;
             display: flex;
@@ -76,10 +75,11 @@
         }
 
         footer {
-            height: 10%;
+            height: 50px;
             border: 1px solid #333;
-            margin-top: 5px;
+            position: relative;
             color: forestgreen;
+            margin-top: 5px;
             display: flex;
             justify-content: center;
             align-items: center
@@ -95,16 +95,17 @@
         <nav>
             <p>Navigation Menu</p>
         </nav>
-    </div>
-    <div class="content">
-        <div class="contentleft">
-            Content
-        </div>
-        <div class="contentright">
-            Content
-        </div>
-        <div class="maincontent">
-            Main Content
+
+        <div class="content">
+            <div class="contentleft">
+                Content
+            </div>
+            <div class="maincontent">
+                Main Content
+            </div>
+            <div class="contentright">
+                Content
+            </div>
         </div>
         <footer>
             Footer
