@@ -1,0 +1,1 @@
+Tạo mới một Object mới mà không ảnh hưởng Object cũ
