@@ -39,7 +39,7 @@ function vd1() {
   elmBodyTable.innerHTML = tempRowTable;
 }
 function vd2() {
-  const LIST_USER_CARD = [
+  /* const LIST_USER_CARD = [
     {
       name: "Jisoo",
       avatar:
@@ -68,35 +68,45 @@ function vd2() {
       city: "Hàn Quốc",
       id: "26",
     },
-  ];
+  ]; */
+  const URL = "https://63a06c35e3113e5a5c3d3680.mockapi.io/users";
+  fetch(URL, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      _renderUI(data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  function _renderUI(users) {
+    let elmBody = document.getElementById("tbody__user");
 
-  let elm = document.getElementById("div_content");
+    function formatRow(user) {
+      return `
+      <tr onclick="handleClickRow(${user.id})">
+        <td>${user.id}</td>
+        <td>${user.name}</td>
+        <td>${user.city}</td>
+        <td>${user.avatar}</td>
+      </tr>
+      `;
+    }
 
-  function formatUICard(user) {
-    return `
-    <div class="card col-3">
-        <img
-            src="${user.avatar}"
-            ,
-            class="card-img-top"
-            alt="..."
-        />
-        <div class="card-body">
-            <h5 class="card-title">${user.name}</h5>
-            <p class="card-text">
-            BLACKPINK - 'BORN PINK' Concert in Seoul Day 2
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    `;
+    let bodyTable = "";
+
+    for (let index = 0; index < users.length; index++) {
+      bodyTable += formatRow(users[index]);
+    }
+
+    elmBody.innerHTML = bodyTable;
   }
-
-  let resUI = "";
-  for (let index = 0; index < LIST_USER_CARD.length; index++) {
-    resUI += formatUICard(LIST_USER_CARD[index]);
-  }
-
-  elm.innerHTML = resUI;
 }
+
+function handleClickRow(userId) {
+  console.log("handleClickRow", userId);
+  window.location.href = `./detail.html?id${userId}`;
+}
+
 vd2();
