@@ -1,45 +1,4 @@
-function vd1() {
-  let elmBodyTable = document.getElementById("tbody__user");
-  let listUser = [
-    {
-      id: 1,
-      name: "name 1",
-      function: "Delete 1",
-    },
-    {
-      id: 2,
-      name: "name 2",
-      function: "Delete 2",
-    },
-    {
-      id: 3,
-      name: "name 3",
-      function: "Delete 3",
-    },
-    {
-      id: 4,
-      name: "name 4",
-      function: "Delete 4",
-    },
-  ];
-
-  let tempRowTable = "";
-  for (let index = 0; index < listUser.length; index++) {
-    tempRowTable += formatRowUser(listUser[index]);
-  }
-  function formatRowUser(user) {
-    let _stringTr = `<tr>
-    <th scope="row">${user.id}</th>
-    <td>${user.name}</td>
-    <td>${user.function}</td>
-</tr>`;
-    return _stringTr;
-  }
-
-  elmBodyTable.innerHTML = tempRowTable;
-}
-function vd2() {
-  /* const LIST_USER_CARD = [
+/* const LIST_USER_CARD = [
     {
       name: "Jisoo",
       avatar:
@@ -69,7 +28,39 @@ function vd2() {
       id: "26",
     },
   ]; */
-  const URL = "https://63a06c35e3113e5a5c3d3680.mockapi.io/users";
+
+const URL = "https://63a06c35e3113e5a5c3d3680.mockapi.io/users";
+getListUser();
+
+function _renderUI(users) {
+  let elmBody = document.getElementById("tbody__user");
+
+  function formatRow(user) {
+    return `
+    <tr>
+      <td>${user.id}</td>
+      <td>${user.name}</td>
+      <td>${user.city}</td>
+      <td>${user.avatar}</td>
+      <td>
+        <button class="btn btn-success" onclick="goToDetail(${user.id})">Detail</button>
+        <button class="btn btn-danger" onclick="deleteUser(${user.id})">Delete</button>
+        <button class="btn btn-primary" onclick="handleEdit(${user.id})">Edit</button>
+      </td>
+    </tr>
+    `;
+  }
+
+  let bodyTable = "";
+
+  for (let index = 0; index < users.length; index++) {
+    bodyTable += formatRow(users[index]);
+  }
+
+  elmBody.innerHTML = bodyTable;
+}
+
+function getListUser() {
   fetch(URL, {
     method: "GET",
   })
@@ -80,33 +71,28 @@ function vd2() {
     .catch((error) => {
       console.error("Error:", error);
     });
-  function _renderUI(users) {
-    let elmBody = document.getElementById("tbody__user");
-
-    function formatRow(user) {
-      return `
-      <tr onclick="handleClickRow(${user.id})">
-        <td>${user.id}</td>
-        <td>${user.name}</td>
-        <td>${user.city}</td>
-        <td>${user.avatar}</td>
-      </tr>
-      `;
-    }
-
-    let bodyTable = "";
-
-    for (let index = 0; index < users.length; index++) {
-      bodyTable += formatRow(users[index]);
-    }
-
-    elmBody.innerHTML = bodyTable;
-  }
 }
 
-function handleClickRow(userId) {
-  console.log("handleClickRow", userId);
-  window.location.href = `./detail.html?id${userId}`;
+function goToDetail(userId) {
+  console.log("goToDetail", userId);
+  window.location.href = `./detail.html?id=${userId}`;
 }
 
-vd2();
+function deleteUser(userId) {
+  console.log("deleteUser");
+  let user_delete = URL + "/" + userId;
+  fetch(user_delete, {
+    method: "DELETE",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      getListUser();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+function handleEdit(userId) {
+  console.log("handleEdit", userId);
+  window.location.href = `./form.html?id=${userId}`;
+}
