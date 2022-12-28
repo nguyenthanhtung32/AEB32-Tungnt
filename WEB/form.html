@@ -10,32 +10,26 @@
     <link rel="stylesheet" href="./common.css">
 </head>
 
-<body class="div_body">
+<body class="div_body2">
     <header class="p-3 rounded-3">
         <iframe src="./header.html" height="56px" frameborder="0" class="w-100 rounded-3"></iframe>
     </header>
-    <div class="div_box3 div_container">
+    <div class="div_box3 text-warning">
         <form class="row g-3 w-50 m-auto my-3" onsubmit="return false">
             <div class="col-md-6">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" />
+                <label for="inputEmail" class="form-label">Id</label>
+                <input type="text" class="form-control" id="inputId" />
             </div>
             <div class="col-md-6">
-                <label for="inputPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword" />
+                <label for="inputPassword" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" />
             </div>
             <div class="col-12">
-                <label for="inputUserName" class="form-label">User Name</label>
-                <input type="text" class="form-control" id="inputUserName" />
+                <label for="inputUserName" class="form-label">Avatar</label>
+                <input type="url" class="form-control" id="inputAvatar" />
             </div>
             <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                    <label class="form-check-label" for="gridCheck"> Check me out </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary" onclick="handleSignin()">Sign in</button>
+                <button type="submit" class="btn btn-primary" onclick="handleSubmit()">Initialization</button>
             </div>
         </form>
     </div>

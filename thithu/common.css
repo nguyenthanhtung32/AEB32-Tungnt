@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ccc;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  flex: 0.5;
+}
+
+.img {
+  flex: 0.5;
+  padding: 5px 0px;
+  object-fit: contain;
+  text-align: center;
+}

@@ -9,36 +9,34 @@
   border-radius: 50%;
   display: flex;
   box-shadow: rgb(162, 13, 30) 0px 0px 10px 5px inset;
-  background-image: url(https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/Aatrox.png);
 }
 .div_container {
   border: 1px solid black;
-  background-color: rgb(221, 214, 214);
+  background-color: rgb(241, 241, 241);
   border-radius: 5px;
   margin: 5% 10% 10% 10%;
 }
 .div_box {
   position: relative;
   margin: 10px 10px 0 10px;
-  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg");
+  background-image: url("https://preview.redd.it/in73r6sbixz31.png?width=4096&format=png&auto=webp&s=810fa4aef8f17b2ccf3ca4c18601eb731904d37e");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #4b4b4b;
-  background-blend-mode: luminosity;
+ 
 }
-.div_body {
-  background-image: url("https://www.riotgames.com/darkroom/1440/1d4875763dad3b2324feb914900e0e41:82781546e92db9f6f86186f31733b482/riot-games-self-publish-league-legends-teamfight-tactics-southeast-asia.png");
+.div_body1 {
+  background-image: url("https://www.pixel4k.com/wp-content/uploads/2019/11/league-of-legends-world-championship-2018-poro-lol_1574104331.jpg");
+  object-fit: none;
+  background-repeat: no-repeat;
+}
+.div_body2 {
+  background-image: url("./wallpapersden.com_league-of-legends-hd-cool-gaming_3000x1545.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .div_box3 {
-  border: 1px solid black;
+  border: 5px solid rgb(255, 255, 255);
   margin: 100px 20% 0px 20%;
-}
-.div_random {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: normal;
-  padding-top: 10px;
 }
 .div_image {
   height: 150px;
@@ -50,32 +48,12 @@
   border-radius: 4px;
   padding-right: 100px;
 }
-.div_list {
+.div_skill {
   margin: 30px 10px 20px 10px;
 }
 .div_cast {
   display: flex;
 }
-.div_p {
-  margin-left: 5px;
-}
 .div_boxinput {
   margin-left: 10%;
-}
-.div_a {
-  color: #fbaf17;
-  margin: 5px;
-}
-.div_a1 {
-  color: inherit;
-  margin: 5px;
-}
-.div_src {
-  width: 20px;
-  height: 20px;
-}
-.div_kda {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px;
 }

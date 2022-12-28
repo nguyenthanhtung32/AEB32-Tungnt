@@ -10,157 +10,83 @@
     <link rel="stylesheet" href="./common.css">
 </head>
 
-<body class="div_body">
+<body class="div_body1">
     <header class="p-3 rounded-3">
         <iframe src="./header.html" height="56px" frameborder="0" class="w-100 rounded-3"></iframe>
     </header>
-    <div class="div_container">
-        <div class="div_box text-white">
-            <div>
-                <div>
-                    <div class="d-flex">
-                        <div>
-                            <a class="avatar" href="">
-                            </a>
-                        </div>
-                        <div>
-                            <h1 style="margin-left: 15px;">
-                                <span class="d-flex">Aatrox Build
-                                </span>
-                                <span> Top Lane LoL
-                                </span>
-                            </h1>
-                        </div>
+    <div class="div_container" id="div_list">
+        <!--  <div>
+            <div class="div_box text-white">
+                <div class="d-flex">
+                    <div class="avatar"
+                        style="background-image: url(https://preview.redd.it/in73r6sbixz31.png?width=4096&format=png&auto=webp&s=810fa4aef8f17b2ccf3ca4c18601eb731904d37e);">
+                    </div>
+                    <div>
+                        <h1 style="margin-left: 15px;">
+                            <span class="d-flex">Aatrox
+                            </span>
+                            <span> Top Lane LoL
+                            </span>
+                        </h1>
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="">
-                    <img src="https://www.metasrc.com/assets/v/6.1.8/images/games/lol/5v5_icon.png" class="div_src">
-                    <span>5v5</span>
-                </a>
-                <a href="">
-                    <img src="https://www.metasrc.com/assets/v/6.1.8/images/games/lol/aram_icon.png" class="div_src">
-                    <span>ARAM</span>
-                </a>
-                <a href="">
-                    <img src="https://www.metasrc.com/assets/v/6.1.8/images/games/lol/special_active_icon.png"
-                        class="div_src">
-                    <span>URF</span>
-                </a>
-            </div>
-            <div>
-                <div class="div_kda">
-                    <span>
-                        <strong>Tier: </strong>
-                        <span>S+</span>
-                    </span>
-                    <span>
-                        <strong>Win: </strong>
-                        <span>50.48%</span>
-                    </span>
-                    <span><strong>Role: </strong>
-                        <span>90.36%</span>
-                    </span>
-                    <span>
-                        <strong>Pick: </strong>
-                        <span>10.30%</span>
-                    </span>
-                    <span><strong>Ban: </strong>
-                        <span>21.95%</span>
-                    </span>
-                    <span><strong>Games: </strong>
-                        <span>457983</span>
-                    </span>
-                    <span><strong>KDA: </strong>
-                        <span>1.90</span>
-                    </span>
-                    <span><strong>Score: </strong>
-                        <span>86.02</span>
-                    </span>
-                </div>
-            </div>
         </div>
-        <div class="text-dark div_list">
+        <div class="text-dark div_skill">
             <div>
-                <h6 class="text-black">Deathbringer Stance (Hình Bóng Tử Thần) - Nội tại</h6>
-                <div class="div_cast">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/passive/Aatrox_Passive.png">
-                    <p class="div_p">Hồi chiêu 25 giây</p>
+                <div>
+                    <h6 class="text-black">Đường Kiếm Tuyệt Diệt - Nội tại</h6>
+                    <div class="div_cast">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/passive/Aatrox_Passive.png">
+                    </div>
+                    <p>Theo chu kỳ, đòn đánh kế tiếp của Aatrox gây thêm sát thương vật lý và hồi máu, dựa theo máu tối
+                        đa của mục tiêu.</p>
                 </div>
-                <p>"Đòn đánh thường tiếp theo của Aatrox tăng thêm 50 tầm đánh và gây [8-16%] máu tối đa của mục tiêu
-                    thành
-                    sát thương vật lý (tối đa 400 lên quái), và gây hiệu ứng Mutilator trong 3 giây. Thời gian hồi chiêu
-                    giảm 2 giây khi Aatrox sử dụng kỹ năng hoặc đánh trúng một tướng với kiếm của Darkin."</p>
-                <p>Mutilator - giảm 40% hồi máu từ mọi nguồn và khiên của mục tiêu.</p>
-            </div>
-            <div>
-                <h6 class="text-black">The Darkin Sword (Quỷ Kiếm Darkin) - Q</h6>
-                <div class="div_cast">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxQ.png">
-                    <p class="div_p">Không tiêu hao
-                        <br>
-                        Hồi chiêu 16/15/14/13/12
-                    </p>
+                <div>
+                    <h6 class="text-black">Quỷ Kiếm Darkin - Q</h6>
+                    <div class="div_cast">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxQ.png">
+                    </div>
+                    <p>Aatrox đập kiếm xuống đất, gây sát thương vật lý. Có thể chém ba lần, mỗi lần có một diện tác
+                        dụng khác nhau.</p>
                 </div>
-                <p>"Aatrox bổ thanh kiếm xuống , gây sát thương vật lý bằng 15/30/45/60/75 (+ 64/68/72/76/80% tổng
-                    SMCK). Quỷ Kiếm Darkin còn có thể kích hoạt thêm 2 lần nữa, mỗi lần tăng thêm sát thương.
-                    Mỗi đòn đánh bằng lưỡi kiếm sẽ hất tung kẻ địch và gây thêm sát thương"</p>
-                <p>Gây sát thương [55 - 100% theo cấp] lên lính</p>
-                <p>Gây thêm sát thương bằng 20% SMCK lên quái và hất tung lâu hơn gấp 2 lần</p>
-                <p>Sát thương của Q mỗi lần kích hoạt tăng 25% - Q1/2/3 = 100% / 125% / 150%</p>
-                <p>Kẻ địch trúng chiêu ở lưỡi kiếm gây sát thương nhiều hơn 50% so với bình thường</p>
-            </div>
-            <div>
-                <h6 class="text-black">Infernal Chains (Xích Hỏa Ngục) - W</h6>
-                <div class="div_cast">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxW.png">
-                    <p class="div_p">Không tiêu hao
-                        <br>
-                        Hồi chiêu 18/7/16/15/14
-                    </P>
+                <div>
+                    <h6 class="text-black">Xiềng Xích Địa Ngục - W</h6>
+                    <div class="div_cast">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxW.png">
+                    </div>
+                    <p>Aatrox đập kiếm xuống đất, gây sát thương lên kẻ địch đầu tiên trúng phải. Tướng và quái to phải
+                        nhanh rời vùng tác động nếu không muốn bị kéo về tâm và chịu sát thương lần nữa.</p>
                 </div>
-                <p>"Aatrox đánh nứt mặt đất gây sát thương vật lý bằng 30/40/50/60/70 (+ 40% tổng SMCK) cho kẻ địch đầu
-                    tiên trúng chiêu và làm chậm 15/20/25/30/35% trong 1,5 giây.
-                    Tướng hoặc quái khủng có 1.5 giây để ra khỏi vùng ảnh hưởng hoặc bị kéo lại và nhận thêm một lần sát
-                    thương nữa"</p>
-                <p>Gây sát thương gấp đôi lên lính</p>
-            </div>
-            <div>
-                <h6 class="text-black">Umbral Dash (Cú Lướt Hắc Ám) - E</h6>
-                <div class="div_cast">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxE.png">
-                    <p class="div_p">Không tiêu hao
-                        <br>
-                        Hồi chiêu 3/2.5/2/1.5/1
-                    </p>
+                <div>
+                    <h6 class="text-black">Bộ Pháp Hắc Ám - E</h6>
+                    <div class="div_cast">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxE.png">
+                    </div>
+                    <p>Nội tại giúp Aatrox hồi máu khi gây sát thương lên tướng. Kích hoạt giúp Aatrox lướt theo hướng
+                        chỉ định.</p>
                 </div>
-                <p>"Nội tại: Aatrox hồi máu bằng 15 / 16,25 / 17,5 / 18.75 / 20% sát thương vật lý gây ra</p>
-                <p>Kích hoạt: Aatrox đâm về phía trước, được nhận thêm SMCK. 2 cộng dồn</p>
-                <p>E có thể kích hoạt trong khi sử dụng các chiêu thức khác mà không bị ngắt"</p>
-                <p>SMCK khi kích hoạt: 15/25/35/45/55</p>
-                <p>Thời gian tăng cộng dồn: 20/18/16/14/12</p>
-            </div>
-            <div>
-                <h6 class="text-black">World Ender (Chiến Binh Tận Thế) - R</h6>
-                <div class="div_cast">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxR.png">
-                    <p class="div_p">Không tiêu hao
-                        <br>
-                        Hồi chiêu 160/140/120
-                    </p>
+                <div>
+                    <h6 class="text-black">World Ender (Chiến Binh Tận Thế) - R</h6>
+                    <div class="div_cast">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/12.23.1/img/spell/AatroxR.png">
+                    </div>
+                    <p>Aatrox hóa quỷ, làm hoảng sợ lính địch gần đó và được cộng SMCK, tăng hồi máu cũng như Tốc độ Di
+                        chuyển. Nếu hắn tham gia hạ gục, hiệu ứng này được kéo dài.</p>
                 </div>
-                <p>"Aatrox hóa quỷ trong 12 giây tiếp theo, gây hoảng sợ cho lính gần đó và tăng:</p>
-                <p>- Tăng tốc độ di chuyển trong 1 giây đầu và khi không chiến đấu với tướng và trụ</p>
-                <p>- Tăng sát thương</p>
-                <p>- Một bể máu được tích tụ và cho Aatrox hồi sinh lại nếu bị hạ gục"</p>
-                <p>Tốc độ di chuyển tăng 120/180/240</p>
-                <p>SMCK cộng thêm: 30</p>
+                <div>
+                    <h6>Tìm hiểu thêm về Aatrox</h6>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rqNFKTikCec"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="../bootstrap-5.2.3-dist/umd/popper.min.js"></script>
     <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="./list.js"></script>
 </body>
 
 </html>
